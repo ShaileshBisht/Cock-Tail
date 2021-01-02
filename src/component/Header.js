@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import LocalBarTwoToneIcon from "@material-ui/icons/LocalBarTwoTone";
-import TextField from "@material-ui/core/TextField";
 import "./Header.css";
 
 const Header = () => {
+  const [input, setInput] = useState("");
+
+  const searchDrink = (e) => {
+    e.preventDefault();
+    console.log(input);
+  };
+
   return (
     <AppBar position="sticky" className="header">
       <Toolbar>
@@ -17,8 +23,16 @@ const Header = () => {
         </Typography>
         <form className="header_search">
           <SearchIcon style={{ marginLeft: "10px" }} />
-          <input className="header_input" />
-          <IconButton>
+          <input
+            className="header_input"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <IconButton
+            type="submit"
+            disabled={input === ""}
+            onClick={searchDrink}
+          >
             <LocalBarTwoToneIcon style={{ color: "white" }} />
           </IconButton>
         </form>
