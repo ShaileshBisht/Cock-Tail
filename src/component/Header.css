@@ -1,0 +1,12 @@
+.header_title {
+  flex-grow: 1;
+}
+
+.header_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_input {
+  outline-style: none;
+}
