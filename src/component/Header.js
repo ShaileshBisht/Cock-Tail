@@ -13,17 +13,13 @@ const Header = () => {
     <AppBar position="sticky" className="header">
       <Toolbar>
         <Typography variant="h6" color="inherit" className="header_title">
-          Cock-Tail
+          CockTail
         </Typography>
         <form className="header_search">
-          <SearchIcon />
-          <TextField
-            className="header_input"
-            placeholder="Drink name..."
-            id="standard-basic"
-          />
+          <SearchIcon style={{ marginLeft: "10px" }} />
+          <input className="header_input" />
           <IconButton>
-            <LocalBarTwoToneIcon />
+            <LocalBarTwoToneIcon style={{ color: "white" }} />
           </IconButton>
         </form>
       </Toolbar>

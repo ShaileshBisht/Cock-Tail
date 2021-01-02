@@ -1,12 +1,32 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .header_title {
   flex-grow: 1;
+  font-size: 30px !important;
 }
 
 .header_search {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid;
+  border-width: 0;
+  border-radius: 9px;
+  padding: 2px;
+  color: white;
+  background-color: #3b8ad9;
 }
 .header_input {
   outline-style: none;
+  background-color: transparent;
+  border-width: 0;
+  margin-left: 10px;
+  color: white;
+}
+
+.header_search:hover {
+  background-color: #5398dd;
 }
