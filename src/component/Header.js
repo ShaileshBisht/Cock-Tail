@@ -43,13 +43,13 @@ const Header = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
             />
-            <IconButton
+            {/* <IconButton
               type="submit"
               disabled={input === ""}
               onClick={searchDrink}
             >
               <LocalBarTwoToneIcon style={{ color: "white" }} />
-            </IconButton>
+            </IconButton> */}
           </form>
         </Toolbar>
       </AppBar>

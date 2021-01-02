@@ -5,7 +5,7 @@
 }
 
 .header_title {
-  flex-grow: 1;
+  flex: 1;
   font-size: 30px !important;
 }
 
@@ -19,6 +19,9 @@
   padding: 2px;
   color: white;
   background-color: #3b8ad9;
+  height: 40px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 .header_input {
   outline-style: none;
