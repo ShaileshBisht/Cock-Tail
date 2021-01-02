@@ -1,6 +1,7 @@
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .header_title {
@@ -29,4 +30,8 @@
 
 .header_search:hover {
   background-color: #5398dd;
+}
+
+.header_noResult {
+  text-align: center;
 }

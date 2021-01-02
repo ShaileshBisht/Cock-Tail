@@ -1,0 +1,27 @@
+.card {
+  overflow: hidden;
+}
+.card_media {
+  height: 400px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.card_media:hover {
+  transform: scale(1.05);
+}
+
+.card_instruction {
+  height: 108px;
+  overflow: scroll;
+}
+
+.card_instruction::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card_instruction {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
