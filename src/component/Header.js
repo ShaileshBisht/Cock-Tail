@@ -3,14 +3,14 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
+
 import SearchIcon from "@material-ui/icons/Search";
-import LocalBarTwoToneIcon from "@material-ui/icons/LocalBarTwoTone";
+
 import "./Header.css";
 import CardDrink from "./CardDrink";
 
 const Header = () => {
-  const [input, setInput] = useState("margarita");
+  const [input, setInput] = useState("");
   const [data, setData] = useState([]);
   console.log(data);
 
@@ -55,9 +55,9 @@ const Header = () => {
       </AppBar>
 
       {data ? (
-        <Grid justify="space-evenly" container spacing={4}>
+        <Grid justify="space-evenly" container spacing={1}>
           {data.map((item) => (
-            <Grid item xs={12} sm={6} lg={4} xl={3}>
+            <Grid item xs={12} sm={5} md={4} lg={3} xl={4}>
               <CardDrink key={item.idDrink} info={item} />
             </Grid>
           ))}

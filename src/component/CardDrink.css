@@ -1,6 +1,12 @@
 .card {
   overflow: hidden;
+  margin: 20px;
 }
+
+.card:hover {
+  box-shadow: 5px 4px #888888 !important;
+}
+
 .card_media {
   height: 400px;
   object-fit: contain;
