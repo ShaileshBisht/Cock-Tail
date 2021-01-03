@@ -14,9 +14,9 @@ const Header = () => {
   const [data, setData] = useState([]);
   console.log(data);
 
-  const searchDrink = (e) => {
-    e.preventDefault();
-  };
+  // const searchDrink = (e) => {
+  //   e.preventDefault();
+  // };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,7 +36,7 @@ const Header = () => {
           <Typography variant="h6" color="inherit" className="header_title">
             CockTail
           </Typography>
-          <form className="header_search">
+          <div className="header_search">
             <SearchIcon style={{ marginLeft: "10px" }} />
             <input
               className="header_input"
@@ -50,7 +50,7 @@ const Header = () => {
             >
               <LocalBarTwoToneIcon style={{ color: "white" }} />
             </IconButton> */}
-          </form>
+          </div>
         </Toolbar>
       </AppBar>
 
