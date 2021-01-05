@@ -7,6 +7,7 @@
 .header_title {
   flex: 1;
   font-size: 30px !important;
+  cursor: pointer;
 }
 
 .header_search {
@@ -37,4 +38,8 @@
 
 .header_noResult {
   text-align: center;
+}
+
+.header_searchIcon {
+  display: none !important;
 }
