@@ -1,5 +1,7 @@
 https://cocktail-drinks.netlify.app/
 
+Search beverages from thousands of available cocktails. made using React + RestfulAPI and fully responsive.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
